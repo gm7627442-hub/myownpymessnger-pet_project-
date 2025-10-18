@@ -7,7 +7,7 @@ def client_thread(client_id):
         client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         client.connect(('localhost', 5555))
         
-        # Для улучшенной версии - отправляем ник
+     
         try:
             nick_request = client.recv(1024).decode('utf-8')
             if nick_request == "NICK":
