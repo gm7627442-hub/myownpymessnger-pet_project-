@@ -15,7 +15,7 @@ def client_thread(client_id):
             pass
         
         # Отправляем несколько сообщений
-        for i in range(3):
+        for i in range(10):
             message = f"Сообщение {i} от User{client_id}"
             client.send(message.encode('utf-8'))
             time.sleep(1)
